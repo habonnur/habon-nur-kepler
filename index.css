@@ -3,14 +3,31 @@ background-color: tan;
 color: black;
 font-family: 'Montserrat','Courier New', Courier, monospace;
 padding: 20px;
+
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#Experience ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  
+  #Experience ul li {
+    flex: 1;
+    text-align: center;
+  }
+  
 section {
     margin: 20px auto;
     max-width: 700px
 }
 
-h2{
+h2, h3{
     display: inline-block;
     background-color: rgb(238, 181, 160);
     border-top: 2px solid #100f0f;
@@ -34,4 +51,5 @@ ul li {
     margin: 5px 0;
     border-radius: 5px;
     list-style-type: none;
+
 }
