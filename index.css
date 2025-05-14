@@ -8,6 +8,11 @@ font-family: 'Montserrat','Courier New', Courier, monospace;
 padding: 20px;
 
 }
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 
 ul {
     display: flex;
@@ -19,7 +24,7 @@ section {
     max-width: 700px
 }
 
-h1, h2, h3{
+h2, h3{
     display: inline-block;
     background-color: rgb(238, 181, 160);
     border-top: 2px solid #100f0f;
@@ -29,10 +34,15 @@ h1, h2, h3{
 }
 
 h1 {
-    display: inline-block;
-    background-color: rgb(238, 181, 160);
-    font-weight: bold;
-    font-size: 30px;
+  background-color: rgb(238, 181, 160);
+  font-weight: bold;
+  font-size: 30px;
+  display: inline-block;     /* key part */
+  margin: 0 auto;            /* center it */
+  text-align: center;
+  padding: 10px 20px;        /* optional: adjust spacing */
+  border-top: 2px solid #100f0f;
+  border-bottom: 2px solid #100f0f;
 }
 
 body h2 {
@@ -79,6 +89,17 @@ nav ul {
   border-radius: 8px;
   text-align: center;
 }
+@media (max-width: 599px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
 /* Tablet Styling */
 @media (min-width: 600px) {
     h1 {
@@ -96,5 +117,14 @@ nav ul {
     }
     h1 {
       font-size: 42px;
+    }
+  }
+  @media (min-width: 900px) {
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: tan;
+      padding: 20px 0;
     }
   }
