@@ -2,75 +2,73 @@
    These styles apply to phones by default*/
 
 body {
-background-color: tan; 
-color: black;
-font-family: 'Montserrat','Courier New', Courier, monospace;
-padding: 20px;
-
+  background-color: tan; 
+  color: black;
+  font-family: 'Montserrat','Courier New', Courier, monospace;
+  padding: 20px;
 }
+
 header {
   text-align: center;
   margin-bottom: 20px;
 }
 
-
 ul {
-    display: flex;
-    flex-direction: row;
-  }
-  
-section {
-    margin: 40px auto;
-    max-width: 700px
+  display: flex;
+  flex-direction: row;
 }
 
-h2, h3{
-    display: inline-block;
-    background-color: rgb(238, 181, 160);
-    border-top: 2px solid #100f0f;
-    border-bottom: 2px solid #100f0f;
-    padding-bottom: 5px;
+section {
+  margin: 40px auto;
+  max-width: 700px;
+}
 
+h2, h3 {
+  display: inline-block;
+  background-color: rgb(238, 181, 160);
+  border-top: 2px solid #100f0f;
+  border-bottom: 2px solid #100f0f;
+  padding-bottom: 5px;
 }
 
 h1 {
   background-color: rgb(238, 181, 160);
   font-weight: bold;
   font-size: 30px;
-  display: inline-block;     /* key part */
-  margin: 0 auto;            /* center it */
+  display: inline-block;
+  margin: 0 auto;
   text-align: center;
-  padding: 10px 20px;        /* optional: adjust spacing */
+  padding: 10px 20px;
   border-top: 2px solid #100f0f;
   border-bottom: 2px solid #100f0f;
 }
 
 body h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 ul li {
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    color: black;    
-    list-style-type: none;
-    text-align: center;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: black;    
+  list-style-type: none;
+  text-align: center;
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-/* NAV/Experience / Skills / Projects */
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
 
+/* NAV/Experience / Skills / Projects */
 nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
 
 #Experience ul,
 #Skills ul,
@@ -81,6 +79,7 @@ nav ul {
   gap: 20px;
   margin-top: 20px;
 }
+
 #Experience li,
 #Skills li,
 #Projects li {
@@ -89,6 +88,8 @@ nav ul {
   border-radius: 8px;
   text-align: center;
 }
+
+/* Mobile Styling */
 @media (max-width: 599px) {
   nav ul {
     flex-direction: column;
@@ -100,31 +101,33 @@ nav ul {
     margin: 10px 0;
   }
 }
+
 /* Tablet Styling */
 @media (min-width: 600px) {
-    h1 {
-      font-size: 36px;
-    }
-    nav ul {
-      gap: 50px;
-    }
+  h1 {
+    font-size: 36px;
   }
-  
-  /* Desktop Styling */
-  @media (min-width: 900px) {
-    section {
-      max-width: 900px;
-    }
-    h1 {
-      font-size: 42px;
-    }
+
+  nav ul {
+    gap: 50px;
   }
-  @media (min-width: 900px) {
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background-color: tan;
-      padding: 20px 0;
-    }
+}
+
+/* Desktop Styling */
+@media (min-width: 900px) {
+  section {
+    max-width: 900px;
   }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: tan;
+    padding: 20px 0;
+  }
+}
